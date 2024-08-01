@@ -25,7 +25,6 @@ body {
 }
 
 .container {
-    display: none;
     padding: 20px;
 }
 
@@ -74,4 +73,9 @@ form input[type="submit"] {
 
 form input[type="submit"]:hover {
     background-color: #575757;
+}
+
+p a {
+    color: #333;
+    text-decoration: underline;
 }
