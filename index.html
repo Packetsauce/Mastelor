@@ -14,12 +14,13 @@
         <div class="nav-links">
             <a href="index.html">Home</a>
             <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
             <a href="subjects.html">Subjects</a>
         </div>
     </div>
 
     <!-- Landing Page -->
-    <div class="container">
+    <div class="container" id="home">
         <div class="home-container">
             <h1>Welcome to Mastelor</h1>
             <p>Mastelor is your ultimate guide to learning how to write either a Bachelor or Master degree. Explore our courses and resources to excel in your academic writing journey.</p>
@@ -28,10 +29,10 @@
     </div>
 
     <!-- Login Page -->
-    <div class="container">
+    <div class="container" id="login">
         <div class="login-container">
             <h2>Login</h2>
-            <form id="loginForm" onsubmit="return validateForm()">
+            <form id="loginForm" onsubmit="return login()">
                 <label for="username">Username:</label><br>
                 <input type="text" id="username" name="username" required><br><br>
                 <label for="password">Password:</label><br>
@@ -42,8 +43,24 @@
         </div>
     </div>
 
+    <!-- Registration Page -->
+    <div class="container" id="register">
+        <div class="register-container">
+            <h2>Register</h2>
+            <form id="registerForm" onsubmit="return register()">
+                <label for="newUsername">Username:</label><br>
+                <input type="text" id="newUsername" name="newUsername" required><br><br>
+                <label for="newPassword">Password:</label><br>
+                <input type="password" id="newPassword" name="newPassword" required><br><br>
+                <input type="submit" value="Register">
+            </form>
+            <p id="registerError" style="color: red; display: none;">Username already exists.</p>
+            <p id="registerSuccess" style="color: green; display: none;">Registration successful! You can now <a href="login.html">login</a>.</p>
+        </div>
+    </div>
+
     <!-- Subjects Page -->
-    <div class="container">
+    <div class="container" id="subjects">
         <div class="subjects-container">
             <h2>Available Courses</h2>
             <ul class="courses-list">
