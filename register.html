@@ -1,1 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Mastelor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="brand">
+            <a href="index.html">Mastelor</a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+            <a href="subjects.html">Subjects</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="register-container">
+            <h2>Register</h2>
+            <form id="registerForm" onsubmit="return register()">
+                <label for="newUsername">Username:</label><br>
+                <input type="text" id="newUsername" name="newUsername" required><br><br>
+                <label for="newPassword">Password:</label><br>
+                <input type="password" id="newPassword" name="newPassword" required><br><br>
+                <input type="submit" value="Register">
+            </form>
+            <p id="registerError" style="color: red; display: none;">Username already exists.</p>
+            <p id="registerSuccess" style="color: green; display: none;">Registration successful! You can now <a href="login.html">login</a>.</p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
 
