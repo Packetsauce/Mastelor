@@ -25,10 +25,11 @@ body {
 }
 
 .container {
+    display: none;
     padding: 20px;
 }
 
-.home-container, .login-container, .subjects-container {
+.home-container, .login-container, .register-container, .subjects-container {
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
@@ -74,4 +75,3 @@ form input[type="submit"] {
 form input[type="submit"]:hover {
     background-color: #575757;
 }
-
