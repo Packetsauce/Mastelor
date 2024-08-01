@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Mastelor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="brand">
+            <a href="index.html">Mastelor</a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+            <a href="subjects.html">Subjects</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="login-container">
+            <h2>Login</h2>
+            <form id="loginForm" onsubmit="return login()">
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username" required><br><br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required><br><br>
+                <input type="submit" value="Login">
+            </form>
+            <p id="loginError" style="color: red; display: none;">Invalid username or password.</p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
 
