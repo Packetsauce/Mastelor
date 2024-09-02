@@ -22,11 +22,27 @@
     <div class="container">
         <div class="home-container">
             <h1>Welcome to Mastelor</h1>
-            <p>Mastelor is your ultimate guide to learning how to write either a Bachelor or Master degree. Explore our courses and resources to excel in your academic writing journey.</p>
-            <p>Our platform offers structured courses designed by experts to help you master the art of academic writing. Whether you are starting your Bachelor degree or advancing to a Master degree, we have the right resources to guide you through every step of the process.</p>
+            <p>Mastelor is your ultimate online resource for mastering the art of academic writing, whether you are pursuing a Bachelor's or a Master's degree. Our platform offers comprehensive courses designed by academic experts to help you excel in writing your thesis or dissertation.</p>
+            
+            <h2>Our Services</h2>
+            <ul>
+                <li><strong>Step-by-Step Courses:</strong> Gain access to structured courses that guide you through each stage of writing your academic thesis, from selecting a topic to final proofreading.</li>
+                <li><strong>Expert Tips & Techniques:</strong> Learn from experienced academics who share their best practices for research, writing, and presenting your work effectively.</li>
+                <li><strong>Resource Library:</strong> Explore a wide range of templates, examples, and reference materials that can help you format your work according to academic standards.</li>
+                <li><strong>Personalized Feedback:</strong> Receive constructive feedback on your drafts from our community of academic professionals.</li>
+                <li><strong>Q&A Sessions:</strong> Participate in live sessions where you can ask questions and get answers from experts.</li>
+            </ul>
+
+            <p>If you have any questions or need further assistance, feel free to reach out to us!</p>
+
+            <button onclick="sendEmail()">Contact Us</button>
         </div>
     </div>
 
-    <script src="scripts.js"></script>
+    <script>
+        function sendEmail() {
+            window.location.href = 'mailto:martin.b.eriksen1001@gmail.com?subject=Inquiry%20about%20Mastelor&body=Hello%20Mastelor%20Team,%0D%0A%0D%0AI%20would%20like%20to%20inquire%20about%20your%20services.%0D%0A%0D%0AThank%20you!';
+        }
+    </script>
 </body>
 </html>
